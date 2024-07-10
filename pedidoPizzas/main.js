@@ -37,7 +37,12 @@ function exibirPedido(tamanho, sabor, quantidade) {
 }
 
     try {
-        exibirPedido('g', 'calabresa', 2); // Pedido de 2 pizzas pequenas de calabresa
+        exibirPedido('o', 'calabresa', 2);
+    } catch (error) {
+        console.error(error.message);
+    }
+    try {
+        exibirPedido('p', 'calabresa', 2);
     } catch (error) {
         console.error(error.message);
     }
